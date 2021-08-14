@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Software</title>
+<link rel="stylesheet" href="./SiPEO - Prof. Dr.-Ing. Xiaoxiang Zhu_files/template.css" type="text/css">
+</head>
+
+
+<body>
+<br>
+<font color="#103FFF" size="2">
+<h2>Zero-shot Learning</h2>
+</font>
+<hr>
+<h3>Abstract</h3>    
+A zero-shot learning (ZSL) method of automatic
+target recognition (ATR) in synthetic aperture radar (SAR) image
+is proposed to address the scenario, where no SAR sample of a
+particular target is available for training. To learn features of
+the unseen target, physics-based electromagnetic (EM) simulated
+images of the target under different azimuth angles are used
+as the training data instead. The challenge lies in the fact that
+the simulated image has a distinct but nonessential texture that
+the real images do not have and, thus, can easily result in an
+overfitted discriminator network. To overcome this problem, all
+images are first preprocessed with a nonessential factor suppression
+step and then fed into a pretrained convolutional neural
+network for feature extraction. Finally, the feature vector is fed
+into a trainable fully-connected network for classification. The
+low-dimensional embedding of feature vectors suggests that the
+nonessential factor suppression can align the simulated samples
+with true samples effectively. We propose the max-tolerability
+principle and averaged margin index for ZSL, which is a useful
+indicator for selecting optimal classifier.We validated our method
+on ten-type target recognition task on MSTAR data sets and
+achieved 91.93% accuracy on nine known targets and 79.08%
+accuracy on zero-shot target.
+Index Terms—Convolutional neural network (CNN), synthetic
+aperture radar (SAR), zero-shot learning (ZSL).
+
+<h3><a href="https://github.com/QianSong-Cherry/SAR-ZSL">Download Here</a></h3>
+
+<font color="#103FFF" size="2">
+<h2>SAR Image Colorization</h2>
+</font>
+<hr>
+<h3>Abstract</h3> 
+Numerous radar polarimetry theories and polarimetric synthetic aperture radar (PolSAR) processing
+methods have been developed. However, the vast majority of SAR images are not fully polarimetric
+(full-pol). This paper proposes ``radar image colorization'' to reconstruct a full-pol image from a nonfull-
+pol image, so that existing PolSAR methods, such as model-based decomposition and unsupervised
+classification, can be directly applied to the reconstructed full-pol SAR images. It proposes to train a specially
+designed deep neural network to convert a single polarization gray-scale SAR image to full-pol. It consists of
+two components: a feature extractor network to extract hierarchical multi-scale spatial features of the grayscale
+SAR image, followed by a feature translator network to map spatial feature to polarimetric feature
+with which the polarimetric covariance matrix of each pixel can be reconstructed. Both qualitative and
+quantitative experiments with real full-pol data are conducted to show the efficacy of the proposed method.
+The reconstructed full-pol SAR image agrees well with the true full-pol image, not only in the sense of
+visual similarity but also in the sense of real PolSAR applications, such as target decomposition and terrain
+classification.
+<h3><a href="https://github.com/QianSong-Cherry/SAR-Colorization-v2">Download Here</a></h3>
+
+<br>
+<a href="./Homepage.html">Homepage</a> 
+<br>
+<br>
+<br>
+</body>
+</html>
